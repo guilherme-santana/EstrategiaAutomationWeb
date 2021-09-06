@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'br.com.estrategiaconcursos'
+version '1.0-SNAPSHOT'
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+
+    // Use Cucumber for java and Junit
+    implementation group: 'info.cukes', name: 'cucumber-java', version: '1.2.5'
+    testImplementation group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
+
+    // Use Selenium
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+}
+
+test {
+    useJUnit()
+}
