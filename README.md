@@ -20,6 +20,6 @@ Projeto de teste automatizado em plataforma web.
 Guilherme Santana
 
 ### Estrutura do projeto
-
+![alt text](https://github.com/guilherme-santana/EstrategiaAutomationWeb/blob/master/struct/estrutura.png)
 
 
