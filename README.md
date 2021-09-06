@@ -13,13 +13,15 @@ Projeto de teste automatizado em plataforma web.
 
 ### 🛠️ Ferramentas Utilizadas
  - Cucumber-java 1.2.5
- - cucumber-junit 1.2.5
+ - Cucumber-junit 1.2.5
+ - Selenium 3.141.59
  - Java 8
  - Gradle 6.8
 ### 🧔 Responsáveis pelo projeto
 Guilherme Santana
 
 ### Estrutura do projeto
+
 ![alt text](https://github.com/guilherme-santana/EstrategiaAutomationWeb/blob/master/struct/estrutura.png)
 
  - Pacote core
@@ -27,12 +29,15 @@ Guilherme Santana
       ![alt text](https://github.com/guilherme-santana/EstrategiaAutomationWeb/blob/master/struct/core.png)
  
  - Pacote pages
-    - Responsável por realizar o mapeamento dos elementos de cada página da aplicação.
+    - Camada onde todos os elementos estão mapeados separados por página.
     
  - Pacote runner
-    - Executor central dos testes e também centraliza a configuração de suítes de teste, plugins e reports.
+    - Executor central dos testes e também configurações de suítes de teste, plugins e reports.
+ 
+ - Pacote steps
+    - Camada que possui classes que interpretam os passos descritos nos arquivos .feature e inicializam a automação. 
  
  - Pacote resources
-    - Centraliza todas os arquivos .feature do projeto.
+    - Centraliza todos os arquivos .feature do projeto.
 
 
